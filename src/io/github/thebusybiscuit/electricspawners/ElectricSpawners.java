@@ -45,12 +45,12 @@ public class ElectricSpawners extends JavaPlugin implements Listener {
 		
 		Category category = null;
 		try {
-			category = new Category(new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGI2YmQ5NzI3YWJiNTVkNTQxNTI2NTc4OWQ0ZjI5ODQ3ODFhMzQzYzY4ZGNhZjU3ZjU1NGE1ZTlhYTFjZCJ9fX0="), "&9Electric Spawners", "", "&a> Click to open"));
+			category = new Category(new CustomItem(CustomSkull.getItem("eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGI2YmQ5NzI3YWJiNTVkNTQxNTI2NTc4OWQ0ZjI5ODQ3ODFhMzQzYzY4ZGNhZjU3ZjU1NGE1ZTlhYTFjZCJ9fX0="), "&9Электрические спавнеры", "", "&a> Нажмите, чтобы открыть"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		Research research = new Research(4820, "Powered Spawners", 30);
+		Research research = new Research(4820, "Электрические спавнеры", 30);
 		
 		for (String mob: cfg.getStringList("mobs")) {
 			try {
